@@ -12,7 +12,7 @@ import Card1Ds from './components/Card1Ds';
 import Card2Ds from './components/Card2Ds';
 import Card1Cy from './components/Card1Cy';
 import Card2cy from './components/Card2cy';
-
+import CardCar from './components/CardCar';
  function App() {
 
   return (
@@ -41,6 +41,7 @@ import Card2cy from './components/Card2cy';
           <Route path='/ds/card2Ds' element={<Card2Ds />} />
           <Route path='/cyber/card1Cy' element={<Card1Cy />} />
           <Route path='/cyber/card2Cy' element={<Card2cy />} />
+          <Route path='/career/CardCar' element={<CardCar />} />
           
     </Routes>
       </Router>
