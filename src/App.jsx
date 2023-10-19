@@ -31,20 +31,20 @@ function App() {
               Menu
             </button>
             {menuOpen && (
-              <div className="mobile-menu">
+              <div className="mobile-menu d-inline-block" >
                 <Link to='/' style={{ padding: 10 }} onClick={toggleMenu}>
                   ALL
                 </Link>
-                <Link to='/fsd' style={{ padding: 10 }} onClick={toggleMenu}>
+                <Link to='/fsd'className='d-inline-block' style={{ padding: 10 }} onClick={toggleMenu}>
                   FULL STACK DEVELOPMENT
                 </Link>
-                <Link to='/datascience' style={{ padding: 10 }} onClick={toggleMenu}>
+                <Link to='/datascience'className='d-inline-block' style={{ padding: 10 }} onClick={toggleMenu}>
                   DATA SCIENCE
                 </Link>
-                <Link to='/cyber' style={{ padding: 10 }} onClick={toggleMenu}>
+                <Link to='/cyber'className='d-inline-block' style={{ padding: 10 }} onClick={toggleMenu}>
                   CYBER SECURITY
                 </Link>
-                <Link to='/career' style={{ padding: 10 }} onClick={toggleMenu}>
+                <Link to='/career'className='d-inline-block' style={{ padding: 10 }} onClick={toggleMenu}>
                   CAREER
                 </Link>
               </div>
@@ -60,8 +60,21 @@ function App() {
           </div>
         </div>
         <Routes>
-          {/* ... your route definitions ... */}
+          <Route path='/' element={<Alllist />} />
+          <Route path='/fsd' element={<Fsd />} />
+          <Route path='/datascience' element={<Datascience />} />
+          <Route path='/cyber' element={<Cyber />} />
+          <Route path='/career' element={<Career />} />
+          <Route path='/fsd/card1' element={<Card1 />} />
+          <Route path='/fsd/card2' element={<Card2 />} />
+          <Route path='/fsd/card3' element={<Card3 />} />
+          <Route path='/ds/card1Ds' element={<Card1Ds />} />
+          <Route path='/ds/card2Ds' element={<Card2Ds />} />
+          <Route path='/cyber/card1Cy' element={<Card1Cy />} />
+          <Route path='/cyber/card2Cy' element={<Card2cy />} />
+          <Route path='/career/CardCar' element={<CardCar />} />
         </Routes>
+
       </Router>
     </div>
   );
