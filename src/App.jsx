@@ -140,16 +140,17 @@ function App() {
 
   return (
     <div>
-      <h1 className='text-center'>courses</h1>
+      <h1 className='text-center mt-4'>courses</h1>
 
       <Router>
         <div className='hello'>
           <div className="d-md-none">
-            <button onClick={toggleMenu} className="menu-button">
+            <button onClick={toggleMenu} className="menu-button bg-info mx-5 mt-4 mb-3">
               Menu
             </button>
             {menuOpen && (
               <div className="mobile-menu d-inline-block">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to='/' style={{ padding: 10 }} onClick={toggleMenu}>
                   ALL
                 </Link>
